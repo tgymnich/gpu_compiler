@@ -1,0 +1,5 @@
+--find-links https://github.com/makslevental/mlir-wheels/releases/expanded_assets/latest
+
+mlir==22.0.0.2025102701+amdgpu.6cb942ce
+mlir-python-bindings==22.0.0.2025102701+amdgpu.6cb942ce
+
