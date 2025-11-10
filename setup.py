@@ -66,7 +66,7 @@ setup(
     ext_modules=[
         CMakeExtension("mlir")
     ],
-    install_requires=["hip-python, numpy"]
+    install_requires=["hip-python", "numpy"],
     cmdclass={"build_ext": CMakeBuild},
     zip_safe=False,
 )
