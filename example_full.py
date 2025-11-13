@@ -39,7 +39,7 @@ with HipContext() as ctx:
     ctx.run_kernel(
         llvm_bc,
         "square_kernel",
-        [ctypes.c_int64(0), ctypes.c_int64(0), d_input, d_output],
+        [0, 0, d_input, d_output],
         n=size * size,
         block_dims=(16, 1, 1),
     )
