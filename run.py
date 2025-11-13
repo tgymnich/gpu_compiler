@@ -146,9 +146,9 @@ class HipContext:
             if isinstance(arg, HipArray):
                 kernel_args.append(arg.device_ptr)
             elif isinstance(arg, int):
-                kernel_params.append(ctypes.c_int(arg))
+                 kernel_args.append(ctypes.c_int64(arg))
             elif isinstance(arg, float):
-                kernel_params.append(ctypes.c_float(arg))
+                kernel_args.append(ctypes.c_float(arg))
             else:
                 raise TypeError(f"Unsupported argument type: {type(arg)}")
 
